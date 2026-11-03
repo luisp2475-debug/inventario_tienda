@@ -1,0 +1,103 @@
+
+/* Aplica estilos al cuerpo de la página */
+body {
+
+    /* Utiliza Arial como fuente principal.
+       Si no está disponible, utiliza otra fuente sin remates */
+    font-family: Arial, sans-serif;
+
+    /* Establece un ancho máximo de 900 píxeles */
+    max-width: 900px;
+
+    /* Deja 40 píxeles de margen arriba y abajo.
+       auto centra horizontalmente el contenido */
+    margin: 40px auto;
+
+    /* Espacio interno:
+       0 píxeles arriba y abajo.
+       16 píxeles a izquierda y derecha */
+    padding: 0 16px;
+}
+
+/* Aplica estilos a todas las tablas */
+table {
+
+    /* La tabla ocupa el 100% del ancho disponible */
+    width: 100%;
+
+    /* Une los bordes de las celdas */
+    border-collapse: collapse;
+}
+
+/* Aplica los mismos estilos a th y td */
+th, td {
+
+    /* Deja 10 píxeles de espacio interno */
+    padding: 10px;
+
+    /* Dibuja un borde de 1 píxel,
+       continuo y de color gris claro */
+    border: 1px solid #ccc;
+
+    /* Alinea el texto hacia la izquierda */
+    text-align: left;
+}
+
+/* Aplica estilos solamente a los encabezados */
+th {
+
+    /* Color de fondo gris oscuro */
+    background-color: #343a40;
+
+    /* Color blanco para las letras */
+    color: white;
+}
+
+.etiqueta {
+    padding: 3px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 13px;
+}
+
+.agotado      { background-color: #f8d7da; } /* Rojo claro */
+.bajo-stock   { background-color: #fff3cd; } /* Amarillo claro */
+.disponible   { background-color: #d4edda; } /* Verde claro */
+
+#resumen {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+.destacado {
+    outline: 3px solid #0d6efd;
+}
+
+.btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-menos { background-color: #dc3545; }
+.btn-mas   { background-color: #28a745; }
+
+.btn:disabled {
+    background-color: #adb5bd;
+    cursor: not-allowed;
+}
+
+.numero {
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+    

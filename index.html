@@ -1,0 +1,76 @@
+
+<!-- Indica al navegador que utilizamos HTML5 -->
+<!DOCTYPE html>
+
+<!-- Inicio del documento HTML en español -->
+<html lang="es">
+
+<!-- Información y configuración de la página -->
+<head>
+
+    <!-- Permite utilizar tildes, ñ y otros caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Adapta la visualización al tamaño de la pantalla -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Nombre que aparece en la pestaña del navegador -->
+    <title>Inventario de la tienda</title>
+
+    <!-- Conecta el archivo de estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<!-- Inicio del contenido visible de la página -->
+<body>
+
+    <!-- Título principal de la página -->
+    <h1>Inventario de la tienda</h1>
+
+    <!-- Inicio de la tabla de inventario -->
+    <table>
+
+        <!-- Encabezados de la tabla -->
+        <thead>
+
+            <!-- Fila que contiene los encabezados -->
+            <tr>
+                <th>Producto</th>
+                <th>Categoría</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Mínimo</th>
+                <th>Subtotal</th>
+                <th>Estado</th>
+            </tr>
+
+        </thead>
+
+        <!--
+        Cuerpo de la tabla.
+        Inicialmente está vacío porque JavaScript
+        agregará las filas de los productos.
+
+        El id permite identificar este elemento
+        desde JavaScript.
+        -->
+        <tbody id="cuerpo-tabla">
+        </tbody>
+
+    </table>
+
+    <!--
+    Contenedor para mostrar el resumen del inventario.
+    JavaScript colocará aquí los resultados.
+    -->
+    <div id="resumen"></div>
+
+    <!-- Conecta el archivo JavaScript -->
+    <script src="script.js"></script>
+
+<!-- Fin del contenido visible -->
+</body>
+
+<!-- Fin del documento HTML -->
+</html>
